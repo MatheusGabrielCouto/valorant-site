@@ -1,0 +1,22 @@
+@import '../../App.scss';
+
+header {
+  max-width: 100%;
+  border-bottom: 1px solid $grey;
+
+
+  .container-header {
+    width: 40%;
+    padding: 13px 0;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    
+    a {
+      color: white;
+      text-decoration: none;
+      font-weight: 300;
+      font-size: 13px;
+    }
+  }
+}

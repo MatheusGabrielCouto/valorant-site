@@ -1,0 +1,86 @@
+@import '../../App.scss';
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../../assets/images/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  section {
+    width: 240px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    .agent {
+      position: relative;
+      border: 2px solid $grey;
+      width: 80%;
+      height: 50vh;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      div {
+        position: absolute;
+        bottom: 10px;
+        color: white;
+        left: 10px;
+        h1 {
+          text-transform: uppercase;
+          font-size: 30px;
+        }
+        p {
+          font-weight: 100;
+          text-transform: uppercase;
+          font-size: 16px;
+        }
+      }
+    }
+
+    .gamemode {
+      border: 2px solid $grey;
+      width: 80%;
+      margin-top: 15px;
+      color: white;
+      padding-bottom: 10px;
+
+      h2 {
+        font-size: 14px;
+        font-weight: 400;
+        margin: 10px 0;
+        text-transform: uppercase;
+        text-align: center;
+      }
+
+      .mode {
+        padding: 2px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 90%;
+        margin: auto;
+        background-color: #74747491;
+
+        img {
+          width: 30px;
+        }
+
+        h3 {
+          text-transform: uppercase;
+          font-size: 13px;
+          font-weight: 300;
+        }
+
+        p {
+          text-transform: uppercase;
+          font-size: 13px;
+          font-weight: 100;
+          color: #c2c2c2;
+        }
+      }
+    }
+  }
+}

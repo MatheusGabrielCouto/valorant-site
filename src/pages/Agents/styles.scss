@@ -1,0 +1,118 @@
+@import '../../App.scss';
+
+.agents-container {
+  width: 100vw;
+  position: relative;
+  height: 100vh;
+  background-image: url('../../assets/images/background-order.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  section {
+    .agent-image-full {
+      width: 40%;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute;
+
+    }
+
+    .agent-info-container {
+      position: absolute;
+      left: 67%;
+      top: 13%;
+      color: white;
+
+      h3 {
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 15px;
+      }
+
+      .title {
+        font-size: 50px;
+        text-transform: uppercase;
+        color: #EAEEB2;
+      }
+
+      .agent-info-habilites {
+        display: flex;
+        .habilite-button {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding: 5px 15px;
+          background-color: #bdbdbd28;
+          cursor: pointer;
+          margin-right: 2px;
+
+          p {
+            text-transform: uppercase;
+          }
+
+          img {
+            margin-top: 5px;
+            width: 30px;
+          }
+        }
+      }
+      .desc-abilite {
+        margin-top: 15px;
+
+        .desc-agent {
+          font-weight: 500;
+          font-size: 12px;
+          margin-bottom: 10px;
+          color: #EAEEB2;
+        }
+
+        h2 {
+          font-size: 18px;
+          text-transform: uppercase;
+          margin-bottom: 5px;
+        }
+        p {
+          width: 60%;
+          font-size: 13px;
+          color: #dfdfdf;
+        }
+      }
+    }
+
+    footer {
+      position: absolute;
+      bottom: 3%;
+      width: 95%;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1;
+      
+      .list-agets {
+        display: flex;
+        flex-wrap: wrap;
+        width: 60%;
+        margin: auto;
+
+        div {
+          cursor: pointer;
+          width: 60px;
+          height: 60px;
+          background-position: center;
+          background-size: cover;
+          margin: 5px;
+          border: 1px solid #747474;
+          background-color: #74747444;
+        }
+      }
+    }
+  }
+}
+
+.line {
+  width: 150%;
+  height: 1px;
+  background-color: $grey;
+}
